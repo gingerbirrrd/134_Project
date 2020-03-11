@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobPostingForm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#00422B" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:background="#00422B"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Job Posting"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_black_24dp"
+            android:background="#00422B"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="#b3b3b3">
+
+        <LinearLayout
+            android:id="@+id/job_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Job Position"
+                android:textColor="#000000"/>
+        </LinearLayout>
+            <EditText
+                android:id="@+id/position_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:background="@drawable/job_posting_form_bg"
+                android:layout_below="@+id/job_position"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:paddingTop="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_below="@+id/position_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Rate"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/rate_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:background="@drawable/job_posting_form_bg"
+                android:layout_below="@+id/rate"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:paddingTop="2dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_below="@+id/rate_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Duration"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/duration_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:background="@drawable/job_posting_form_bg"
+                android:layout_below="@+id/duration"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:paddingTop="2dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_below="@+id/duration_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Location"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/location_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:background="@drawable/job_posting_form_bg"
+                android:layout_below="@+id/location"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:paddingTop="5dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_below="@+id/location_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Description"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/description_box"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:background="@drawable/job_posting_form_bg"
+                android:layout_below="@+id/description"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:paddingTop="2dp"
+                android:inputType="textMultiLine"/>
+
+            <TextView
+                android:id="@+id/requirements"
+                android:layout_below="@+id/description_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Requirements"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"/>
+
+            <EditText
+                android:id="@+id/requirements_box"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:background="@drawable/job_posting_form_bg"
+                android:layout_below="@+id/requirements"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:paddingTop="2dp"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
